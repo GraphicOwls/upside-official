@@ -13,7 +13,7 @@ export default function BeatStore() {
 			>
 				<Container>
 					<div className='p-6 -mt-20 rounded-xl bg-stone-100 dark:bg-neutral-800'>
-						<div className='overflow-hidden border rounded-t-md border-stone-200 dark:border-neutral-800'>
+						<div className='overflow-hidden border rounded-t-md border-stone-200 dark:border-neutral-900'>
 							{theme === 'light' ? (
 								<iframe
 									id='airbit_infinity'
