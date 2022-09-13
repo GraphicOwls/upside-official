@@ -1,3 +1,4 @@
+import Navbar from '../components/Navbar'
 import Hero from '../sections/Hero'
 import BeatStore from '../sections/BeatStore'
 import Pricing from '../sections/Pricing'
@@ -8,6 +9,7 @@ import Footer from '../components/Footer'
 export default function Home() {
 	return (
 		<>
+			<Navbar />
 			<Hero />
 			<BeatStore />
 			<Pricing />

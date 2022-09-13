@@ -1,4 +1,3 @@
-import ThemeToggle from '../components/ThemeToggle'
 import Image from 'next/image'
 import Section from '../layout/Section'
 import Container from '../layout/Container'
@@ -14,11 +13,10 @@ export default function Hero() {
 
 	return (
 		<>
-			<Section classes='py-56' hasPadding>
+			<Section classes='py-56 z-[1]' hasPadding>
 				<Container>
 					<div className='flex flex-col items-center justify-center text-white'>
 						<HeroLogo />
-						<ThemeToggle />
 					</div>
 				</Container>
 				<Image
@@ -31,7 +29,7 @@ export default function Hero() {
 					layout='fill'
 					objectFit='cover'
 					objectPosition='center'
-					className='absolute inset-0 z-0 w-full h-full'
+					className='absolute inset-0 z-[1] h-full w-full'
 				/>
 			</Section>
 		</>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { Switch } from '@headlessui/react'
+import { Sun1, Moon } from 'iconsax-react'
 
 const ThemeToggle = () => {
 	const [mounted, setMounted] = useState(false)
@@ -34,17 +35,33 @@ const ThemeToggle = () => {
 				checked={enabled}
 				onChange={toggleThemeHandler}
 				className={`${
-					enabled ? 'bg-neutral-600' : 'bg-stone-100'
+					enabled ? 'bg-neutral-700' : 'bg-stone-100'
 				} relative inline-flex h-6 w-11 items-center rounded-full`}
 			>
 				<span className='sr-only'>{theme}</span>
 				<span
 					className={`${
-						enabled
-							? 'translate-x-6 bg-stone-100'
-							: 'translate-x-1 bg-neutral-600'
+						enabled ? 'translate-x-6' : 'translate-x-1'
 					} inline-block h-4 w-4 transform rounded-full transition`}
-				/>
+				>
+					{enabled ? (
+						<div className='text-stone-100'>
+							<Sun1
+								size='16'
+								color='currentColor'
+								variant='Bold'
+							/>
+						</div>
+					) : (
+						<div className='text-neutral-800'>
+							<Moon
+								size='16'
+								color='currentColor'
+								variant='Bold'
+							/>
+						</div>
+					)}
+				</span>
 			</Switch>
 		</div>
 	)
