@@ -1,7 +1,9 @@
+import { useTheme } from 'next-themes'
 import Section from '../layout/Section'
 import Container from '../layout/Container'
 
 export default function BeatStore() {
+	const { theme } = useTheme()
 	return (
 		<div>
 			<Section
@@ -10,19 +12,32 @@ export default function BeatStore() {
 				id='beats'
 			>
 				<Container>
-					<div className='p-6 -mt-20 rounded-xl bg-stone-100 dark:bg-zinc-800'>
-						<div className='overflow-hidden border rounded-t-md border-stone-200'>
-							<iframe
-								id='airbit_infinity'
-								src='https://Upside.infinity.airbit.com?config_id=12477&embed=1'
-								width='100%'
-								height='680'
-								frameborder='0'
-								scrolling='no'
-							></iframe>
+					<div className='p-6 -mt-20 rounded-xl bg-stone-100 dark:bg-neutral-800'>
+						<div className='overflow-hidden border rounded-t-md border-stone-200 dark:border-neutral-800'>
+							{theme === 'light' ? (
+								<iframe
+									id='airbit_infinity'
+									src='https://Upside.infinity.airbit.com?config_id=12477&embed=1'
+									width='100%'
+									height='680'
+									frameborder='0'
+									scrolling='no'
+									data-hide-on-theme='dark'
+								></iframe>
+							) : (
+								<iframe
+									id='airbit_infinity'
+									src='https://Upside.infinity.airbit.com?config_id=12491&embed=1'
+									width='100%'
+									height='680'
+									frameborder='0'
+									scrolling='no'
+									data-hide-on-theme='light'
+								></iframe>
+							)}
 						</div>
-						<div className='flex flex-col items-center justify-center gap-3 px-3 py-3 rounded-b-md bg-stone-200 sm:flex-row'>
-							<span className='font-medium'>
+						<div className='flex flex-col items-center justify-center gap-3 px-3 py-3 rounded-b-md bg-stone-200 dark:bg-neutral-900 dark:bg-opacity-70 sm:flex-row'>
+							<span className='font-medium dark:text-neutral-300'>
 								Secure checkout with
 							</span>
 							<div className='flex items-center gap-2'>

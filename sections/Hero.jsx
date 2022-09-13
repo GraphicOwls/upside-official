@@ -1,3 +1,4 @@
+import ThemeToggle from '../components/ThemeToggle'
 import Image from 'next/image'
 import Section from '../layout/Section'
 import Container from '../layout/Container'
@@ -17,6 +18,7 @@ export default function Hero() {
 				<Container>
 					<div className='flex flex-col items-center justify-center text-white'>
 						<HeroLogo />
+						<ThemeToggle />
 					</div>
 				</Container>
 				<Image

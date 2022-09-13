@@ -52,57 +52,57 @@ export default function Pricing() {
 						{licenses.map((license) => (
 							<div
 								key={license.name}
-								className='flex flex-col gap-4 p-8 rounded-xl bg-stone-100 lg:p-6'
+								className='flex flex-col gap-4 p-8 rounded-xl bg-stone-100 dark:bg-neutral-800 lg:p-6'
 							>
 								<div className='flex flex-col gap-2'>
 									<h3 className='mb-0 text-xl font-bold'>
 										{license.name}
 									</h3>
-									<div className='flex self-start gap-2 px-2 py-1 text-xs leading-none uppercase border rounded-full border-stone-400'>
-										<span className='font-bold text-stone-700'>
+									<div className='flex self-start gap-2 px-2 py-1 text-xs leading-none uppercase border rounded-full border-stone-400 dark:border-neutral-600'>
+										<span className='font-bold text-stone-700 dark:text-neutral-200'>
 											Format:
 										</span>
-										<span className='text-stone-500'>
+										<span className='text-stone-500 dark:text-neutral-500'>
 											{license.format}
 										</span>
 									</div>
 								</div>
-								<span className='py-6 text-6xl font-bold text-stone-800'>
+								<span className='py-6 text-6xl font-bold text-stone-800 dark:text-neutral-100'>
 									${license.price}
 								</span>
-								<ul className='grid gap-3 mb-4 text-sm text-stone-600'>
+								<ul className='grid gap-3 mb-4 text-sm text-stone-600 dark:text-neutral-400'>
 									<li>
-										<span className='mr-1 font-bold text-stone-800'>
+										<span className='mr-1 font-bold text-stone-800 dark:text-neutral-200'>
 											Type:
 										</span>
 										{license.type}
 									</li>
 									<li>
-										<span className='mr-1 font-bold text-stone-800'>
+										<span className='mr-1 font-bold text-stone-800 dark:text-neutral-200'>
 											Units:
 										</span>
 										{license.units}
 									</li>
 									<li>
-										<span className='mr-1 font-bold text-stone-800'>
+										<span className='mr-1 font-bold text-stone-800 dark:text-neutral-200'>
 											Royalties:
 										</span>
 										{license.royalties}
 									</li>
 									<li>
-										<span className='mr-1 font-bold text-stone-800'>
+										<span className='mr-1 font-bold text-stone-800 dark:text-neutral-200'>
 											Streams:
 										</span>
 										{license.streams}
 									</li>
 									<li>
-										<span className='mr-1 font-bold text-stone-800'>
+										<span className='mr-1 font-bold text-stone-800 dark:text-neutral-200'>
 											Use:
 										</span>
 										{license.use}
 									</li>
 									<li>
-										<span className='mr-1 font-bold text-stone-800'>
+										<span className='mr-1 font-bold text-stone-800 dark:text-neutral-200'>
 											Credit:
 										</span>
 										{license.credit}
@@ -130,9 +130,9 @@ export default function Pricing() {
 								</Button>
 							</div>
 						))}
-						<div className='flex flex-col gap-4 p-8 rounded-xl bg-stone-100 lg:p-6'>
-							<div className='flex min-h-[320px] flex-grow flex-col items-center justify-center rounded-sm border border-dashed border-stone-300 p-4 text-center sm:min-h-0 sm:p-3'>
-								<div className='mb-4 text-stone-800'>
+						<div className='flex flex-col gap-4 p-8 rounded-xl bg-stone-100 dark:bg-neutral-800 lg:p-6'>
+							<div className='flex min-h-[320px] flex-grow flex-col items-center justify-center rounded-sm border border-dashed border-stone-300 p-4 text-center dark:border-neutral-600 dark:text-neutral-200 sm:min-h-0 sm:p-3'>
+								<div className='mb-4 text-stone-800 dark:text-neutral-100'>
 									<svg
 										width='57'
 										height='56'

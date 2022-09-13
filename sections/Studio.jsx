@@ -34,21 +34,24 @@ export default function Studio() {
 							/>
 						</div>
 						<div className='relative z-0 px-3 md:w-1/2 md:px-0'>
-							<div className='p-12 rounded-b-xl bg-stone-100 md:rounded-r-xl md:rounded-l-none'>
+							<div className='p-12 rounded-b-xl bg-stone-100 dark:bg-neutral-800 md:rounded-r-xl md:rounded-l-none'>
 								<h2 className='mb-3 text-3xl font-bold'>
 									Studio Services
 								</h2>
-								<p>
-									Velit elit veniam mollit duis est sit qui
-									elit culpa nostrud pariatur deserunt sit.
-									Officia cillum cillum incididunt magna
-									mollit deserunt dolore consectetur id ad
-									sit. Ea occaecat fugiat est incididunt ad
-									sunt consequat velit sint in enim ex
-									deserunt aliquip. Aliqua aliqua dolor
-									proident dolor.
+								<p className='dark:text-neutral-300'>
+									I like to view audio as the capturing of a
+									moment in time. Though the methods over
+									time have changed from analog to digital,
+									I use both mediums to achieve the best
+									sonic outcome. I do my best work up close
+									and personal when I work directly with my
+									clients to produce music from scratch. For
+									those not in Saint Louis, Missouri I offer
+									online mixing and mastering services as
+									well. Music is my passion and I’d love to
+									help you with yours!
 								</p>
-								<ul className='grid gap-4 font-semibold mt-7 mb-7'>
+								<ul className='grid gap-4 font-semibold mt-7 mb-7 dark:text-neutral-100'>
 									<li className='flex items-center gap-3'>
 										<svg
 											width='28'

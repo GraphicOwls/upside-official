@@ -9,11 +9,11 @@
 	h4,
 	h5,
 	h6 {
-		@apply text-stone-800;
+		@apply text-stone-800 dark:text-stone-100;
 	}
 
 	p {
-		@apply text-stone-600;
+		@apply text-stone-600 dark:text-stone-300;
 	}
 }
 
@@ -22,7 +22,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Inter', sans-serif;
-	@apply bg-stone-300 dark:bg-zinc-900;
+	@apply bg-stone-300 dark:bg-neutral-900;
 	scroll-behavior: smooth;
 }
 

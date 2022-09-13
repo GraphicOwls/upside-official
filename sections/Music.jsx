@@ -35,7 +35,7 @@ export default function Music() {
 					title='New Music'
 					subtitle='I am constantly working on new music, which is dropping soon. New music videos as well. Subscribe to the channel to stay up to date.'
 				/>
-				<div className='p-6 m-auto rounded-xl bg-stone-100 dark:bg-zinc-800 md:max-w-4xl'>
+				<div className='p-6 m-auto rounded-xl bg-stone-100 dark:bg-neutral-800 md:max-w-4xl'>
 					<div className='relative flex items-center justify-center aspect-video'>
 						<div
 							onClick={openModal}
@@ -76,8 +76,9 @@ export default function Music() {
 					</div>
 					<Button
 						classes='rounded-t-none rounded-b-md'
-						href='#'
+						href='https://www.youtube.com/channel/UCm3BAMfyujdvDq2S5Nlsp0g'
 						text='Subscribe for New Music'
+						target='_blank'
 					>
 						<svg
 							width='24'
@@ -126,13 +127,13 @@ export default function Music() {
 									leaveFrom='opacity-100 scale-100'
 									leaveTo='opacity-0 scale-95'
 								>
-									<Dialog.Panel className='w-full max-w-5xl p-6 overflow-hidden text-left align-middle transition-all transform shadow-xl rounded-2xl bg-stone-100'>
+									<Dialog.Panel className='w-full max-w-5xl p-6 overflow-hidden text-left align-middle transition-all transform shadow-xl rounded-2xl bg-stone-100 dark:bg-neutral-800'>
 										<div className='aspect-video'>
 											<iframe
 												width='100%'
 												height='auto'
 												style={{ aspectRatio: '16 / 9' }}
-												src='https://www.youtube.com/embed/A-sS_Ts2Bjc'
+												src='https://www.youtube.com/embed/Xv-4259UY6E'
 												title='YouTube video player'
 												frameborder='0'
 												allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
