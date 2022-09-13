@@ -25,6 +25,7 @@ export default function Hero() {
 					width={2048}
 					height={680}
 					style={heroStyles.image}
+					quality={100}
 					src={heroImage}
 					alt='Upside Official'
 					layout='fill'
