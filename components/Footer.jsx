@@ -240,18 +240,23 @@ export default function Footer() {
 							</li>
 						))}
 					</ul>
-					<span className='text-md text-stone-600 dark:text-neutral-400'>
-						©{new Date().getFullYear()} Upside Official |
-						Site by{' '}
-						<a
-							href='https://twitter.com/noahraskin_'
-							className='transition-colors duration-200 text-stone-800 hover:text-red-500 dark:text-neutral-200 dark:hover:text-red-400'
-							target='_blank'
-							rel='noreferrer'
-						>
-							@noahraskin_
-						</a>
-					</span>
+					<div className='text-center text-md text-stone-600 dark:text-neutral-400'>
+						<span className='block'>
+							©{new Date().getFullYear()} Upside Official —
+							All rights reserved.
+						</span>
+						<span className='block mt-2 text-sm font-light'>
+							Designed & Developed by{' '}
+							<a
+								href='https://twitter.com/noahraskin_'
+								className='inline-block transition-colors duration-200 text-stone-800 hover:text-red-500 dark:text-neutral-200 dark:hover:text-red-400'
+								target='_blank'
+								rel='noreferrer'
+							>
+								@noahraskin_
+							</a>
+						</span>
+					</div>
 				</div>
 			</Container>
 		</footer>

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { Switch } from '@headlessui/react'
-import { Sun1, Moon } from 'iconsax-react'
+import MoonClearFillIcon from 'remixicon-react/MoonClearFillIcon'
+import SunFoggyFillIcon from 'remixicon-react/SunFoggyFillIcon'
 
 const ThemeToggle = () => {
 	const [mounted, setMounted] = useState(false)
@@ -46,19 +47,11 @@ const ThemeToggle = () => {
 				>
 					{enabled ? (
 						<div className='text-stone-100'>
-							<Sun1
-								size='16'
-								color='currentColor'
-								variant='Bold'
-							/>
+							<SunFoggyFillIcon size={16} />
 						</div>
 					) : (
 						<div className='text-neutral-800'>
-							<Moon
-								size='16'
-								color='currentColor'
-								variant='Bold'
-							/>
+							<MoonClearFillIcon size={16} />
 						</div>
 					)}
 				</span>

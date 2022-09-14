@@ -4,6 +4,20 @@ export default function Document() {
 	return (
 		<Html>
 			<Head>
+				<meta
+					property='og:title'
+					content='Upside Official — Beats, Studio Recording & Mixing'
+				/>
+				<meta property='og:type' content='website' />
+				<link rel='icon' href='/assets/upside-favi.ico' />
+				<meta
+					property='og:url'
+					content='https://upsideofficial.com'
+				/>
+				<meta
+					property='og:image'
+					content='/assets/images/upside-og.png'
+				/>
 				<link
 					rel='preconnect'
 					href='https://fonts.googleapis.com'
