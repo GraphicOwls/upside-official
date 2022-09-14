@@ -8,6 +8,10 @@ export default function Document() {
 					property='og:title'
 					content='Upside Official — Beats, Studio Recording & Mixing'
 				/>
+				<meta
+					property='og:description'
+					content="Beats and instrumentals for any artist's next song or project. Record, mix and master your song & vocals with Upside."
+				/>
 				<meta property='og:type' content='website' />
 				<link rel='icon' href='/assets/upside-favi.ico' />
 				<meta
