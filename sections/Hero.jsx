@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Section from '../layout/Section'
 import Container from '../layout/Container'
-import heroImage from '../public/assets/heroImage.jpg'
+import heroImage from '../public/assets/hero-image-alt.png'
 import HeroLogo from '../components/HeroLogo'
 
 export default function Hero() {
