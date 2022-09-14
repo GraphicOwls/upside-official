@@ -5,7 +5,7 @@ import Section from '../layout/Section'
 import Container from '../layout/Container'
 import Button from '../components/Button'
 import SectionTitle from '../components/SectionTitle'
-import musicImage from '../public/assets/studio-pic.jpg'
+import musicImage from '../public/assets/studio-pic-alt.png'
 import HeadphoneFillIcon from 'remixicon-react/HeadphoneFillIcon'
 
 export default function Music() {
