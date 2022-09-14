@@ -16,7 +16,7 @@ export default function Document() {
 				/>
 				<meta
 					property='og:image'
-					content='https://www.upsideofficial.com/assets/images/upside-og.png'
+					content='https://www.upsideofficial.com/assets/upside-og.png'
 				/>
 				<link
 					rel='preconnect'
