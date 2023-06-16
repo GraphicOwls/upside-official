@@ -1,16 +1,16 @@
+/** @format */
+
 import { useTheme } from 'next-themes'
 import ThemeToggle from '../components/ThemeToggle'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import NavLogo from './NavLogo'
-import {
-	Bars3Icon,
-	XMarkIcon,
-} from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 import InstagramFillIcon from 'remixicon-react/InstagramFillIcon'
 import FacebookCircleFillIcon from 'remixicon-react/FacebookCircleFillIcon'
 import YoutubeFillIcon from 'remixicon-react/YoutubeFillIcon'
+import Image from 'next/image'
 
 const navigation = [
 	{ name: 'Beats', href: '#beats' },
@@ -58,20 +58,13 @@ export default function Navbar() {
 							<div className='flex items-center flex-1 md:absolute md:inset-y-0 md:left-0'>
 								<div className='flex items-center justify-between w-full md:w-auto'>
 									<a href='./'>
-										<span className='sr-only'>
-											Upside Official
-										</span>
+										<span className='sr-only'>Upside Official</span>
 										<NavLogo />
 									</a>
 									<div className='flex items-center mr-2 md:hidden'>
 										<Popover.Button className='inline-flex items-center justify-center p-2 transition-colors duration-150 bg-transparent rounded-md text-neutral-400 hover:text-neutral-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-400'>
-											<span className='sr-only'>
-												Open Menu
-											</span>
-											<Bars3Icon
-												className='w-6 h-6'
-												aria-hidden='true'
-											/>
+											<span className='sr-only'>Open Menu</span>
+											<Bars3Icon className='w-6 h-6' aria-hidden='true' />
 										</Popover.Button>
 									</div>
 								</div>
@@ -123,28 +116,25 @@ export default function Navbar() {
 								<div className='flex items-center justify-between px-5 pt-4'>
 									<div>
 										{theme === 'light' ? (
-											<img
-												className='w-auto h-8'
+											<Image
+												className='object-cover w-auto h-8'
 												src='/assets/menu-logo-dark.png'
 												alt=''
+												fill
 											/>
 										) : (
-											<img
-												className='w-auto h-8'
+											<Image
+												className='object-cover w-auto h-8'
 												src='/assets/menu-logo.png'
 												alt=''
+												fill
 											/>
 										)}
 									</div>
 									<div className='-mr-2'>
 										<Popover.Button className='inline-flex items-center justify-center p-2 transition-colors duration-150 bg-transparent rounded-md text-stone-400 hover:text-stone-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-400 dark:text-neutral-400 dark:hover:text-neutral-100'>
-											<span className='sr-only'>
-												Close menu
-											</span>
-											<XMarkIcon
-												className='w-6 h-6'
-												aria-hidden='true'
-											/>
+											<span className='sr-only'>Close menu</span>
+											<XMarkIcon className='w-6 h-6' aria-hidden='true' />
 										</Popover.Button>
 									</div>
 								</div>
